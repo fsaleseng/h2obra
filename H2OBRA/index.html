@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2OBRA | Calculadora de Pegada Hídrica para Obras</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-tint water-icon"></i>
+                    <h1>H2OBRA</h1>
+                </div>
+                <p class="tagline">Sustentabilidade medida em cada gota</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <div class="calculator-container">
+                <div class="calculator-header">
+                    <h2>Calculadora de Pegada Hídrica</h2>
+                    <p>Preencha os campos abaixo para calcular o consumo de água em sua obra</p>
+                </div>
+
+                <form id="waterFootprintForm" class="calculator-form">
+                    <div class="form-group animated-input">
+                        <select id="category" name="category" class="select2-search" required>
+                            <option value="" disabled selected>Selecione a Categoria</option>
+                        </select>
+                        <label for="category">Categoria</label>
+                        <i class="fas fa-chevron-down select-icon"></i>
+                    </div>
+
+                    <div class="form-group animated-input">
+                        <select id="subcategory" name="subcategory" class="select2-search" required disabled>
+                            <option value="" disabled selected>Selecione a Subcategoria</option>
+                        </select>
+                        <label for="subcategory">Subcategoria</label>
+                        <i class="fas fa-chevron-down select-icon"></i>
+                    </div>
+
+                    <div class="form-group animated-input">
+                        <select id="waterType" name="waterType" class="select2-search" required disabled>
+                            <option value="" disabled selected>Selecione o Tipo</option>
+                        </select>
+                        <label for="waterType">Tipo</label>
+                        <i class="fas fa-chevron-down select-icon"></i>
+                    </div>
+
+                    <div class="form-group animated-input">
+                        <select id="item" name="item" class="select2-search" required disabled>
+                            <option value="" disabled selected>Selecione o Item</option>
+                        </select>
+                        <label for="item">Item</label>
+                        <i class="fas fa-chevron-down select-icon"></i>
+                    </div>
+
+                    <div class="form-group animated-input">
+                        <input type="number" id="quantity" name="quantity" min="0" step="0.01" required>
+                        <label for="quantity">Quantidade</label>
+                        <span id="unit" class="unit-label">un</span>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" id="addItemBtn" class="btn btn-secondary">
+                            <i class="fas fa-plus"></i> Adicionar Item
+                        </button>
+                        <button type="button" id="calculateBtn" class="btn btn-primary" disabled>
+                            Visualizar Relatório Completo <i class="fas fa-chart-bar"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="items-preview">
+                <h3>Itens Adicionados <span id="itemsCount">(0)</span></h3>
+                <div class="items-list-container">
+                    <table id="itemsTable">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Quantidade</th>
+                                <th>Consumo (L)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Items will be added here dynamically -->
+                        </tbody>
+                    </table>
+                    <div class="empty-state" id="emptyState">
+                        <i class="fas fa-water"></i>
+                        <p>Nenhum item adicionado ainda</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-tint water-icon"></i>
+                    <span>H2OBRA</span>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html"><i class="fas fa-info-circle"></i> Sobre</a>
+                    <a href="methodology.html"><i class="fas fa-book"></i> Metodologia</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2025 H2OBRA. Todos os direitos reservados.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery (necessário para Select2) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+
+    <!-- Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- Select2 tradução para português (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/i18n/pt-BR.js"></script>
+
+    <!-- Seus scripts -->
+    <script src="assets/js/data.js"></script>
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+
+</html>

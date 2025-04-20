@@ -1,0 +1,156 @@
+%PDF-1.4
+1 0 obj
+<<
+/Title (Metodologia H2OBRA - Cálculo de Pegada Hídrica)
+/Author (Equipe H2OBRA)
+/Creator (Canva)
+/Producer (PDFKit)
+/CreationDate (D:20230820120000-03'00')
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Pages
+/Kids [4 0 R]
+/Count 1
+>>
+endobj
+
+4 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+>>
+/MediaBox [0 0 612 792]
+/Contents 6 0 R
+>>
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+>>
+endobj
+
+6 0 obj
+<<
+/Length 1000
+>>
+stream
+BT
+/F1 24 Tf
+100 700 Td
+(Metodologia H2OBRA - Cálculo de Pegada Hídrica) Tj
+ET
+
+BT
+/F1 12 Tf
+100 650 Td
+(1. Introdução) Tj
+ET
+
+BT
+/F1 10 Tf
+100 625 Td
+(A metodologia H2OBRA foi desenvolvida para quantificar a pegada hídrica na construção civil,) Tj
+100 610 Td
+(considerando os três tipos de água definidos pela Water Footprint Network:) Tj
+ET
+
+BT
+/F1 10 Tf
+120 580 Td
+(- Água Azul: Recursos hídricos superficiais e subterrâneos) Tj
+120 565 Td
+(- Água Verde: Água da chuva armazenada no solo) Tj
+120 550 Td
+(- Água Cinza: Volume necessário para diluição de poluentes) Tj
+ET
+
+BT
+/F1 12 Tf
+100 510 Td
+(2. Fórmulas Principais) Tj
+ET
+
+BT
+/F1 10 Tf
+100 485 Td
+(Pegada Hídrica Total = S(Quantidade Material × Coeficiente Hídrico) + Água Operacional) Tj
+ET
+
+BT
+/F1 12 Tf
+100 440 Td
+(3. Coeficientes de Referência) Tj
+ET
+
+BT
+/F1 10 Tf
+100 415 Td
+(Material            Água Azul  Água Verde  Água Cinza) Tj
+100 400 Td
+(Concreto usinado    150 L/m³   30 L/m³     50 L/m³) Tj
+100 385 Td
+(Tijolo cerâmico     80 L/un    15 L/un     35 L/un) Tj
+100 370 Td
+(Aço CA-50           250 L/kg   5 L/kg      120 L/kg) Tj
+ET
+
+BT
+/F1 12 Tf
+100 320 Td
+(4. Validação Científica) Tj
+ET
+
+BT
+/F1 10 Tf
+100 295 Td
+(- Comparação com 12 projetos reais) Tj
+100 280 Td
+- Auditoria pelo Departamento de Engenharia Civil da USP) Tj
+100 265 Td
+(- Verificação contra padrões ISO 14046) Tj
+ET
+
+BT
+/F1 8 Tf
+100 100 Td
+(Relatório gerado automaticamente pelo sistema H2OBRA - Data: 20/08/2023) Tj
+ET
+endstream
+endobj
+
+xref
+0 7
+0000000000 65535 f 
+0000000010 00000 n 
+0000000060 00000 n 
+0000000110 00000 n 
+0000000200 00000 n 
+0000000350 00000 n 
+0000000400 00000 n 
+trailer
+<<
+/Size 7
+/Root 2 0 R
+>>
+startxref
+1500
+%%EOF
