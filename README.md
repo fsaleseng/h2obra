@@ -1,6 +1,6 @@
 # H2OBRA - Calculadora de Pegada Hídrica para Obras
 
-![H2OBRA Logo](assets/images/logo-h2obra.png)
+![H2OBRA Logo](assets/images/frame1.png)
 
 Uma solução inovadora para cálculo e gestão do consumo hídrico em projetos de construção civil.
 
