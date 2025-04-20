@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2OBRA | Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-tint water-icon"></i>
+                    <h1>H2OBRA</h1>
+                </div>
+                <p class="tagline">Sustentabilidade medida em cada gota</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="contact-page">
+            <div class="contact-container">
+                <section class="contact-info">
+                    <h2>Fale Conosco</h2>
+                    <p>Tem dúvidas, sugestões ou quer saber mais sobre nossas soluções? Entre em contato!</p>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Endereço</h3>
+                            <p>Av. Sustentabilidade, 123<br>Sala 405<br>São Paulo - SP<br>CEP: 04567-890</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-phone-alt"></i>
+                            <h3>Telefones</h3>
+                            <p>(11) 98765-4321<br>(11) 3456-7890</p>
+                            <p class="hours">Seg-Sex: 9h às 18h</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>E-mails</h3>
+                            <p>comercial@h2obra.com<br>suporte@h2obra.com<br>sustentabilidade@h2obra.com</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <h3>Redes Sociais</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-form">
+                    <h2>Envie sua Mensagem</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="comercial">Comercial</option>
+                                <option value="suporte">Suporte Técnico</option>
+                                <option value="parceria">Parcerias</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                        </button>
+                    </form>
+                </section>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.106696296001!2d-46.65390552436488!3d-23.56461626138997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1623869104299!5m2!1spt-BR!2sbr" 
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-tint water-icon"></i>
+                    <span>H2OBRA</span>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html"><i class="fas fa-info-circle"></i> Sobre</a>
+                    <a href="methodology.html"><i class="fas fa-book"></i> Metodologia</a>
+                    <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contato</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2025 H2OBRA. Todos os direitos reservados.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
